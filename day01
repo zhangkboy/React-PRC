@@ -1,0 +1,10 @@
+# 初始化项目，6.x新版本npm；
+
+# npm init ...
+## 官方文档地址：https://docs.npmjs.com/cli-commands/init.html
+
+# 初始化项目执行命令：
+# npm init react-app ./react-prc-01
+## 如果error：error @typescript-eslint/eslint-plugin@2.31.0: The engine "node" is incompatible with this module. Expected version "^8.10.0 || ^10.13.0 || >=11.10.1". Got "10.8.0"
+## 可以执行 yarn config set ignore-engines true
+
