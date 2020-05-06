@@ -1,0 +1,18 @@
+# 项目目录结构
+
+# 1 yarn.lock :类似podfile.lock, 团队不同成员clone下来的依赖版本是一致的；
+# 2 package.json :这个文件是管理下载的依赖包，例如项目中常用的react 和 react-dom库
+# 3 public目录 
+# 3.1 favicon.ico :浏览器tab上的图标，也是这个项目的标志，或者说一个公司的logo，可以替换；
+# 3.2 index.html :项目的入口文件，可以引用第三方类库，或者引入cdn
+# 3.3 manifest.json :应用的配置文件，用于指定应用的名称、图标、权限
+# 4 src目录
+# 4.1 App.css :组件的样式
+# 4.2 index.css :全局的样式（页面内容样式采用就近原则，首先采用App.css）
+# 4.3 App.js :react源代码的根组件（只能有一个div）
+# 4.4 index.js :入口文件（把App.js渲染到root元素上）
+# 4.5 App.test.js :单元测试演示文件
+# 4.6 serviceWorker.js :PWA(Progress Web App:google 2017年落地的web技术，目的是在移动端提供标准化的框架，在网页应用中实现和原生相近的用户体验的渐进式web应用) 离线缓存，控制缓存以及如何响应资源请求逻辑，预缓存关键资源；快速；沉浸式体验-像原生的；（
+核心功能：1：Web App Mainifest-通过manifest.json可以直接添加到手机桌面上; 2: Service Worker; 3:Cache API; 4:推送和通知；5:数据更新-后台同步；6:响应式设计
+）iOS11.3 已支持PWA；
+# 4.7 setupTest.js :
