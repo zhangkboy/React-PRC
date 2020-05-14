@@ -35,7 +35,7 @@ class Clock extends React.Component {
       <div style={style}>
         {date.toLocaleDateString()}
         <br/>
-        {date.getMonth()}:{date.getHours()}:{date.getMinutes()}:{date.getSeconds()}
+        {date.getAllYear()}:{date.getMonth()}:{date.getHours()}:{date.getMinutes()}:{date.getSeconds()}
       </div>
     );
   }

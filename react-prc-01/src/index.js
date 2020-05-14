@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-// import App from './App';
+import App from './App';
 import * as serviceWorker from './serviceWorker';
 import Clock from './Component/clock';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Clock />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
