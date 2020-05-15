@@ -1,0 +1,23 @@
+# 使用bulma
+# Bulma 于2016年发布，遵循MIT license。
+
+# 特性
+# 轻量级的现代CSS框架，使用Flexbox
+# 支持响应式布局，网格等
+# 纯CSS，没有Javascript代码
+# 可定制、模块化
+
+# 优点
+# 为电脑、平板和手机提供响应式设计
+# 纯CSS框架，很容易与JavaScript框架集成，如VueJS, ReactJS等
+# 代码优雅简洁
+
+# npm install bulma
+## 要求
+## 1. 使用HTML5 doctype <!DOCTYPE html>
+## 2. 添加支持响应式的viewport元标记 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+# Bulma-start。
+# Bulma-start是一个很小的npm包，包含了使用Bulma开发网站的全部依赖项。
+# Bulma-start 的安装
+# npm install bulma-start 或者 yarn add bulma-start

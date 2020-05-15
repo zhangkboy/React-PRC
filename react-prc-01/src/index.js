@@ -4,10 +4,11 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import Clock from './Component/clock';
+import Count from './Component/count';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Count />
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -2607,6 +2607,11 @@ builtin-status-codes@^3.0.0:
   resolved "https://registry.npm.taobao.org/builtin-status-codes/download/builtin-status-codes-3.0.0.tgz#85982878e21b98e1c66425e03d0174788f569ee8"
   integrity sha1-hZgoeOIbmOHGZCXgPQF0eI9Wnug=
 
+bulma-start@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.npm.taobao.org/bulma-start/download/bulma-start-0.0.4.tgz#19a0783cd8f55d8f5b3d771c984ab56f72e75cb7"
+  integrity sha1-GaB4PNj1XY9bPXccmEq1b3LnXLc=
+
 bytes@3.0.0:
   version "3.0.0"
   resolved "https://registry.npm.taobao.org/bytes/download/bytes-3.0.0.tgz#d32815404d689699f85a4ea4fa8755dd13a96048"

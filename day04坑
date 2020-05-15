@@ -1,0 +1,36 @@
+
+
+# react的方法需要用{}包起来
+
+# Class里：
+
+========================测试了一下，不加bind的这种写法不对========================
+# this.change = this.change.bind(this);
+# onClick={this.change()} 如果不加bind会直接执行change方法,而且必须加()
+
+这种不加bind的写法会造成下面的死循环问题：
+Error: Maximum update depth exceeded.
+This can happen when a component repeatedly calls setState
+inside componentWillUpdate or componentDidUpdate.
+React limits the number of nested updates to prevent infinite loops.
+这种报错是因为在render里调用的setState造成了死循环，超出react的最大深度
+
+componentWillUpdate和componentDidUpdate 都会调用render，
+所以不加bind的这种写法一开始就会调用2次change方法，
+如果change方法里有setstate的化就又会出发render，所以造成了死循环。
+========================测试了一下，这种写法不对========================
+
+# ========================两种bind方法========================
+# <button onClick={(e) => this.deleteRow(id, e)}>Delete Row</button>
+# <button onClick={this.deleteRow.bind(this, id)}>Delete Row</button>
+# ========================两种bind方法========================
+
+两种bind下e的处理:
+# onClick={this.change.bind(this,1)}
+这种function：change(flag,e)里的参数e要写到后面；
+不用传，e是SyntheticEvent 合成事件
+（SyntheticEvent 是浏览器原生事件跨浏览器的封装。SyntheticEvent 和浏览器原生事件一样有 stopPropagation()、preventDefault() 接口，而且这些接口夸浏览器兼容。
+如果由于某种原因发现您需要基础浏览器事件，只需使用该nativeEvent属性即可获取它）
+
+onClick={(e) => this.deleteRow(id, e)}
+这种function：change(flag,e)里的参数e可以写前面；
