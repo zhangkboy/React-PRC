@@ -16,5 +16,5 @@
 + },
 
 
-# 式化整个项目。
+# 格式化整个项目。
 ./node_modules/.bin/prettier --single-quote --write "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}" 来格式化整个项目。

@@ -1,14 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+// eslint-disable-next-line 
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+// eslint-disable-next-line 
 import Clock from './Component/clock';
-import Count from './Component/count';
+import DrinkList from './Component/drinkList';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Count />
+    <DrinkList />
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -1,0 +1,4 @@
+远程图片加载不出来的问题及解决方案
+Refer导致的
+解决办法：
+<meta name="referrer" content="no-referrer" />

@@ -1,41 +1,42 @@
-import React from 'react';
+import React from "react";
 
 class Clock extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      date: new Date()
-
+      date: new Date(),
     };
 
-    setInterval(()=>{
+    setInterval(() => {
       this.setState({
-        date: new Date()
+        date: new Date(),
       });
-    },1000);
+    }, 1000);
   }
 
-  loadCssFunc = ()=>{
-      return {
-          color:'red',
-          fontSize:12
-      }
-  }
+  loadCssFunc = () => {
+    return {
+      color: "red",
+      fontSize: 12,
+    };
+  };
 
   render() {
     var date = this.state.date;
+    // eslint-disable-next-line
     var self = this;
     const style = {
-      color: 'blue',
-      fontSize:16
+      color: "blue",
+      fontSize: 16,
     };
     return (
       // <div style="background-color:red;">
       <div style={style}>
         {date.toLocaleDateString()}
-        <br/>
-        {date.getAllYear()}:{date.getMonth()}:{date.getHours()}:{date.getMinutes()}:{date.getSeconds()}
+        <br />
+        {date.getAllYear()}:{date.getMonth()}:{date.getHours()}:
+        {date.getMinutes()}:{date.getSeconds()}
       </div>
     );
   }
